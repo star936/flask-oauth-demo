@@ -1,12 +1,14 @@
 # coding: utf-8
 
+from .baidu import baidu
 from .github import github
 from .main import main
 
 
 DEFAULT_BLUEPRINT = (
+    (main, ''),
     (github, '/github'),
-    (main, '')
+    (baidu, '/baidu')
 )
 
 
